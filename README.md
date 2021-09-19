@@ -5,11 +5,11 @@
 
 #### http://localhost:8080/rs/accounts/number/${{accountNumber}}
 
-HTTP Method: GET
-Content-Type: application/json
+HTTP Method: GET   
+Content-Type: application/json   
 Success status: 200
 
 #### http://localhost:8080/rs/accounts/from/${{fromAccountNumber}}/to/${{toAccountNumber}}/amount/${{amount}}
 
-HTTP Method: POST
+HTTP Method: POST   
 Success status: 204
