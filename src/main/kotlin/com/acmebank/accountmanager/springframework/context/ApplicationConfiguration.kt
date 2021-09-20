@@ -15,8 +15,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 @Configuration
 @ComponentScan(
     basePackages = [
-        "com.acmebank.accountmanager.data.repository", "com.acmebank.accountmanager.rs",
-        "com.acmebank.accountmanager.service"]
+        "com.acmebank.accountmanager.data.repository", "com.acmebank.accountmanager.service",
+        "com.acmebank.accountmanager.ws.rs"
+    ]
 )
 @EnableJpaRepositories("com.acmebank.accountmanager.data.repository")
 @EntityScan("com.acmebank.accountmanager.data.domain")

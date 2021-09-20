@@ -1,5 +1,6 @@
 package com.acmebank.accountmanager.springframework.context
 
+import com.acmebank.accountmanager.ws.rs.JsonMergePatchMessageBodyReader
 import org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JacksonJaxbJsonProvider
 import org.glassfish.jersey.server.ResourceConfig
 import org.springframework.beans.factory.annotation.Autowired
@@ -29,6 +30,7 @@ class JerseyConfiguration : ResourceConfig() {
     @PostConstruct
     protected fun postConstruct() {
         // Providers:
+        registerClasses(JsonMergePatchMessageBodyReader::class.java)
         registerInstances(jacksonJaxbJsonProvider)
         // registerInstances(logbookServerFilter)
 

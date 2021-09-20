@@ -1,4 +1,4 @@
-package com.acmebank.accountmanager.rs
+package com.acmebank.accountmanager.ws.rs
 
 import com.acmebank.accountmanager.data.domain.Account
 import java.util.*
